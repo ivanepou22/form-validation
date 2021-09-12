@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+    <main>
+        <div class="main_container">
+            <div class="form_information">
+                <div class="form_header"><h1>Form Validation</h1></div>
+                    <div class="form_data">
+                        <form class="form-horizontal" name="Form" onsubmit="return validateForm()">
+                            <!-- fullname -->
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="fullname">Fullname:</label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Enter fullname">
+                                  <div class="error" id="nameErr"></div>
+                                </div>
+                            </div>
+
+                            <!-- email -->
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="email">Email:</label>
+                              <div class="col-sm-8">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+                                <div class="error" id="emailErr"></div>
+                              </div>
+                            </div>
+
+                            <!-- phone -->
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="phone">Phone Number:</label>
+                              <div class="col-sm-8">
+                                <input type="number" class="form-control" id="mobile" name="mobile" placeholder="Enter Phone Number">
+                                <div class="error" id="mobileErr"></div>
+                              </div>
+                            </div>
+
+                             <!-- gender -->
+                             <div class="form-group">
+                              <label for="country" class="control-label col-sm-2">Nationality:</label>
+                              <div class="col-sm-8">
+                                  <select class="form-control" name="country" id="country">
+                                    <option value="Select">Select</option>
+                                      <option value="uganda">Uganda</option>
+                                      <option value="kenya">Kenya</option>
+                                      <option value="new york">Tanzania</option>
+                                      <option value="ethiopia">Ethiopia</option>
+                                      <option value="somalia">Somalia</option>
+                                      <option value="burundi">Burundi</option>
+                                      <option value="rwanda">Rwanda</option>
+                                    </select>
+                                    <div class="error" id="countryErr"></div>
+                              </div>
+                          </div>
+
+                            <div class="form-group">
+                              <label class="control-label col-sm-2">Gender: </label>
+                                <div class="col-sm-8">
+                                  <div class="radio">
+                                    <div id="gender">
+                                      <label><input type="radio" name="gender" value="male"> Male</label>
+                                      <label><input type="radio" name="gender" value="female"> Female</label>
+                                    </div>
+                                  </div>
+                                  <div class="error" id="genderErr"></div>
+                                </div>
+                            </div>
+
+                            <!-- Age -->
+                            <div class="form-group">
+                              <label class="control-label col-sm-2" for="age">Age:</label>
+                              <div class="col-sm-8">
+                                <input type="number" class="form-control" id="age" name="age" placeholder="Enter Age">
+                                <div class="error" id="ageErr"></div>
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                              <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                              </div>
+                            </div>
+                          </form>
+                    </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

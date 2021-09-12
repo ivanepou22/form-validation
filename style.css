@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+    background-color: rgb(121, 82, 124);
+}
+.main_container{
+    margin: 5% 20% 0 20%;
+    background-color: white;
+}
+.form_header{
+    text-align: center;
+    font-weight: 300;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
+.form_information{
+  padding: 20px;
+}
+.error {
+    color: red;
+    font-size: 90%;
+}
+.input-1{
+    background-image: url(images/check.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    border:1px solid #01cc40;
+}
+.input-2{
+    background-image: url(images/cancel.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    border:1px solid red;
+}
+.input-3{
+    border:1px solid #01cc40!important;
+}
+select{
+    outline: none!important;
+}
+.input-4{
+    border:1px solid red;
+}
+
+#gender {
+    padding: 7px;
+    border-radius: 4px;
+}
